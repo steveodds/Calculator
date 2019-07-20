@@ -5,8 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="" Height="1047" Width="675.97" Margin="12,0" FontSize="42" BorderThickness="0" WindowStartupLocation="Manual" ResizeMode="NoResize" WindowStyle="ToolWindow" Background="Red" Foreground="Red">
+    <Grid Width="659.97" Height="1010">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="TopArea" HorizontalAlignment="Left" Height="407" VerticalAlignment="Top" Width="660" Background="#FFD9D8D8">
+            <Viewbox x:Name="EquationView" Height="56" Canvas.Left="10" Canvas.Top="98" Width="640">
+                <Label x:Name="LabelShowEquation" Content="" Width="766" HorizontalContentAlignment="Right"/>
+            </Viewbox>
+            <Viewbox x:Name="TypingAnswerView" Height="127" Canvas.Left="10" Canvas.Top="183" Width="640">
+                <Label x:Name="LabelShowAnswer" Content="0" Width="329" HorizontalContentAlignment="Right"/>
+            </Viewbox>
+            <Label x:Name="label" Content="Calculator" Canvas.Left="10" Canvas.Top="10" Height="83" Width="640"/>
+        </Canvas>
+        <Canvas x:Name="ButtonArea" HorizontalAlignment="Left" Width="660" Background="#FFE4E4E4" Margin="0,407,0,-14">
+            <Canvas.Effect>
+                <DropShadowEffect Direction="260" BlurRadius="25"/>
+            </Canvas.Effect>
+            <Button x:Name="btnCE" Content="CE" Canvas.Left="12" Canvas.Top="4" Width="150" Height="117" FontSize="61" FontFamily="Segoe UI" Background="#FFF5F4F4" BorderThickness="0"/>
+            <Button x:Name="btnC" Content="C" Canvas.Left="178" Canvas.Top="4" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="#FFF5F4F4" BorderThickness="0"/>
+            <Button x:Name="btnDelete" Canvas.Left="335.97" Canvas.Top="4" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="#FFF5F4F4" BorderThickness="0">
+                <Button.Content>
+                    <Image Source="C:/Users/Samuel Odundo/source/repos/steveodds/Calculator/resources/icons/drawable-xxxhdpi/ButtonDelete.png" Height="88" Width="60"></Image>
+                </Button.Content>
+            </Button>
+            <Button x:Name="btnDivide" Content="÷" Canvas.Left="501.97" Canvas.Top="4" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="#FFF5F4F4" BorderThickness="0"/>
+            <Button x:Name="btnSeven" Content="7" Canvas.Left="12" Canvas.Top="123" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="White" BorderThickness="0"/>
+            <Button x:Name="btnEight" Content="8" Canvas.Left="178" Canvas.Top="123" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="White" BorderThickness="0"/>
+            <Button x:Name="btnNine" Content="9" Canvas.Left="335.97" Canvas.Top="123" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="White" BorderThickness="0"/>
+            <Button x:Name="btnMultiply" Content="x" Canvas.Left="501.97" Canvas.Top="123" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="#FFF5F4F4" BorderThickness="0"/>
+            <Button x:Name="btnFour" Content="4" Canvas.Left="12" Canvas.Top="242" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="White" BorderThickness="0"/>
+            <Button x:Name="btnFive" Content="5" Canvas.Left="178" Canvas.Top="242" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="White" BorderThickness="0"/>
+            <Button x:Name="btnSix" Content="6" Canvas.Left="335.97" Canvas.Top="242" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="White" BorderThickness="0"/>
+            <Button x:Name="btnMinus" Content="-" Canvas.Left="501.97" Canvas.Top="242" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="#FFF5F4F4" BorderThickness="0"/>
+            <Button x:Name="btnOne" Content="1" Canvas.Left="12" Canvas.Top="361" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="White" BorderThickness="0"/>
+            <Button x:Name="btnTwo" Content="2" Canvas.Left="178" Canvas.Top="361" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="White" BorderThickness="0"/>
+            <Button x:Name="btnThree" Content="3" Canvas.Left="335.97" Canvas.Top="361" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="White" BorderThickness="0"/>
+            <Button x:Name="btnPlus" Content="+" Canvas.Left="501.97" Canvas.Top="361" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="#FFF5F4F4" BorderThickness="0"/>
+            <Button x:Name="btnPlusMinus" Content="±" Canvas.Left="12" Canvas.Top="480" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="#FFF5F4F4" BorderThickness="0"/>
+            <Button x:Name="btnZero" Content="0" Canvas.Left="178" Canvas.Top="480" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="White" BorderThickness="0"/>
+            <Button x:Name="btnPeriod" Content="." Canvas.Left="335.97" Canvas.Top="480" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="#FFF5F4F4" BorderThickness="0"/>
+            <Button x:Name="btnEquals" Content="=" Canvas.Left="501.97" Canvas.Top="480" Width="150" Height="117" FontFamily="Segoe UI" FontSize="61" Background="#FFD9D8D8" BorderThickness="0"/>
+        </Canvas>
     </Grid>
 </Window>
