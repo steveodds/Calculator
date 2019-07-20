@@ -67,6 +67,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Simple Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -93,6 +97,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="resources\icons\drawable-hdpi\Button Delete.png" />
+    <Resource Include="resources\icons\drawable-hdpi\Close Symbol.png" />
+    <Resource Include="resources\icons\drawable-hdpi\Min Symbol.png" />
+    <Resource Include="resources\icons\drawable-ldpi\Button Delete.png" />
+    <Resource Include="resources\icons\drawable-ldpi\Close Symbol.png" />
+    <Resource Include="resources\icons\drawable-ldpi\Min Symbol.png" />
+    <Resource Include="resources\icons\drawable-mdpi\Button Delete.png" />
+    <Resource Include="resources\icons\drawable-mdpi\Close Symbol.png" />
+    <Resource Include="resources\icons\drawable-mdpi\Min Symbol.png" />
+    <Resource Include="resources\icons\drawable-xhdpi\Button Delete.png" />
+    <Resource Include="resources\icons\drawable-xhdpi\Close Symbol.png" />
+    <Resource Include="resources\icons\drawable-xhdpi\Min Symbol.png" />
+    <Resource Include="resources\icons\drawable-xxhdpi\Button Delete.png" />
+    <Resource Include="resources\icons\drawable-xxhdpi\Close Symbol.png" />
+    <Resource Include="resources\icons\drawable-xxhdpi\Min Symbol.png" />
+    <Resource Include="resources\icons\drawable-xxxhdpi\ButtonDelete.png" />
+    <Resource Include="resources\icons\drawable-xxxhdpi\CloseSymbol.png" />
+    <Resource Include="resources\icons\drawable-xxxhdpi\MinSymbol.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

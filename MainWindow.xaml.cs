@@ -24,5 +24,10 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void BtnClose_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
